@@ -12,4 +12,6 @@ Example:
 ========
 
 The below example will parse the log file “iislog.log”, create a graph named test.png. The –createRRD is specified and so the test.rrd file will be created with a start time of  1320859514. The graph will be 500px wide and 300px high with a title of “Requests Per Second”
+
+
 ./request.pl --logfile iislog.log --imageFileName test.png --rrdfile "test.rrd" --rrdGraphOptions "\-\-width 500 \-\-height 300 \-\-title 'Requests Per Second'" --createRRD --startEPOCH 1320859514
